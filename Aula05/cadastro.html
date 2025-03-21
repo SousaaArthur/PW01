@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="./script.js"></script>
+  <title>Tela de cadastro</title>
+</head>
+<body>
+  <h2>Tela para realizar cadastro!</h2>
+
+  <form action="">
+    <label for="txtNome">Nome:</label>
+    <input type="text" id="txtNome" name="txtNome" placeholder="Digite seu nome..." required>
+    <label for="txtSenha">Senha:</label>
+    <input type="password" name="txtSenha" id="txtSenha" placeholder="Digite sua senha...">
+    <label for="txtNascimento">Data de Nascimento:</label>
+    <input type="date" name="txtNascimento" id="txtNascimento" required>
+    <label for="selTipoConta">Tipo de conta:</label>
+    <select name="" id="selTipoConta">
+      <option value="" disabled selected>Selecione um tipo</option>
+      <option value="admin">Administrador</option>
+      <option value="usuario">Usuário Padrão</option>
+      <option value="convidado">Convidado</option>
+    </select>
+    <button type="button" onclick="validarCadastro()">Cadastrar</button>
+    <p id="mensagemErro"></p>
+  </form>
+  <p>Já tem conta?<a href="./login.html"> Clique aqui</a></p>
+</body>
+</html>
